@@ -59,11 +59,11 @@
         <div class="Whychooseme">
             <h3 class="Whychoosemetitle">Why Choose Me?</h3>
             <ul class="Whychoosemelist">
-                <li style="padding-bottom: 8vh; padding-left: 2vw;">Teach students in a <span style="color: rgb(85, 0, 255);font-weight: 700;">fun and engaging way</span> so as to prevent them from getting bored or lazy during class</li>
-                <li style="padding-bottom: 8vh; padding-left: 2vw;">Students can communicate with me regarding questions or doubts even after class is over</li>
-                <li style="padding-bottom: 8vh; padding-left: 2vw;">Teach students to be a holistic person by focusing not only on academics but also on <span style="color: rgb(85, 0, 255);font-weight: 700;">personal development</span></li>
-                <li style="padding-bottom: 8vh; padding-left: 2vw;">Educate students with teaching methods learnt from<span style="color: rgb(85, 0, 255);font-weight: 700;"> Tamil Nadu </span></li>
-                <li style="padding-left: 2vw;">Option to choose between <span style="color: rgb(85, 0, 255);font-weight: 700;">online or face-to-face</span></li>
+                <li style="padding-bottom: 8vh; padding-left: 2vw;line-height: 1.8;">Teach students in a <span style="color: rgb(85, 0, 255);font-weight: 700;">fun and engaging way</span> so as to prevent them from getting bored or lazy during class</li>
+                <li style="padding-bottom: 8vh; padding-left: 2vw;line-height: 1.8;">Students can communicate with me regarding questions or doubts even after class is over</li>
+                <li style="padding-bottom: 8vh; padding-left: 2vw;line-height: 1.8;">Teach students to be a holistic person by focusing not only on academics but also on <span style="color: rgb(85, 0, 255);font-weight: 700;">personal development</span></li>
+                <li style="padding-bottom: 8vh; padding-left: 2vw;line-height: 1.8;">Educate students with teaching methods learnt from<span style="color: rgb(85, 0, 255);font-weight: 700;"> Tamil Nadu </span></li>
+                <li style="padding-left: 2vw;line-height: 1.8;">Option to choose between <span style="color: rgb(85, 0, 255);font-weight: 700;">online or face-to-face</span></li>
             </ul>
         </div>
         <div class="whatparentssay">
@@ -109,6 +109,23 @@
             cursor = true;
           }
         }, speed);
+        $(function(){
+
+        var $w = $(window),
+            $background = $('#background');
+
+        // Fix background image jump on mobile
+        if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+        $background.css({'top': 'auto', 'bottom': 0});
+
+        $w.resize(sizeBackground);
+        sizeBackground();
+        }
+
+        function sizeBackground() {
+        $background.height(screen.height);
+        }
+        });
         </script>
     </body>
 </html>

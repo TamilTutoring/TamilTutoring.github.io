@@ -109,6 +109,7 @@ header {
     margin-right: 3vw;
     text-align: justify;
     margin-bottom: 8vh;
+    line-height: 1.7;
 }
 
 
@@ -144,6 +145,7 @@ p.Aboutmetext {
     margin-left: 4vw;
     margin-bottom: 4.4vh;
     display: inline-flexbox;
+    line-height: 1.8;
 }
 
 .Aboutmetitle {
@@ -219,6 +221,7 @@ p.Aboutmetext {
     font-size: 2.1em;
     box-sizing: border-box;
     margin-bottom: 5vh;
+    line-height: 1.8;
 }
 
 .secondparent {
@@ -230,6 +233,7 @@ p.Aboutmetext {
     width: 100%;
     font-size: 2.1em;
     box-sizing: border-box;
+    line-height: 1.8;
 }
 
 @media screen and (max-width: 500px) {
