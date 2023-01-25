@@ -194,11 +194,12 @@ p.Aboutmetext {
 
 .parents {
     display: flex;
-    width: fit-content ;
+    width: 100% ;
     box-sizing: border-box;
 }
 
 .firstparent {
+    float: left;
     margin: 0%;
     padding-top: 0vh;
     border-radius: 2vw;
@@ -209,7 +210,6 @@ p.Aboutmetext {
     height: 75vh;
     font-size: 2.1em;
     box-sizing: border-box;
-    float: left;
     margin-top: 0vh;
 }
 
